@@ -1,0 +1,162 @@
+/* --- start of CSS reset --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/* --- end of CSS reset --- */
+
+:root {
+  --primary: #f8f7f3;
+  --secondary: #1a24fb;
+}
+
+body {
+  width: 100%;
+  background-color: var(--primary);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+
+  background-color: var(--secondary);
+
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+#root {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px 20px;
+
+  margin: 80px auto;
+  padding: 40px;
+}
+
+.card {
+  position: relative;
+  padding: 40px;
+  
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.card .number {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.card h1 {
+  max-width: 280px;
+  min-height: 80px;
+
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+  margin: 10px 0;
+}
+
+.card h2 {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card .text {
+  max-width: 280px;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Overpass', sans-serif;
+}
+
+.card button {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+/* --- ICONS START --- */
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+
+/* --- ICONS END --- */
