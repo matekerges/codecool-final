@@ -59,7 +59,7 @@ const books = {
 const headerContent = `
   <header>
     New York Times Bestseller
-    <span class="material-icons .md24">menu</span>
+    <span class="material-icons md-24">menu</span>
   </header>
 `;
 
@@ -72,7 +72,7 @@ const bookCard = (title, sub, text, number) => {
       <p class="text">${text}</p>
       <button>
         read more
-        <span class="material-icons .md24">arrow_forward</span>
+        <span class="material-icons md-18">arrow_forward</span>
       </button>
     </div>
   `;
